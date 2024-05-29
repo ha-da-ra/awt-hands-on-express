@@ -1,0 +1,24 @@
+<li class="book-item">
+    <h1>
+        <%= book.title %>
+    </h1>
+    <h2>by <%= book.author %>
+    </h2>
+    <div class="rating">
+        <% if (book.rating !==undefined) { 
+            for (let i=0; i < 10;i++) { 
+                if (book.rating> i){%>
+                    <span class="fa fa-star checked"></span>
+            <% } else {%>
+                <span class="fa fa-star"></span>
+            <% }
+            }
+        } %>
+    </div>
+    <div class="already-read">
+        <p>Already Read: <span>
+                <%= book.alreadyRead ? "Yes" : "No" %>
+            </span></p>
+    </div>
+    <a class="add-book-link" href="/books/<%= book._id %>/read">Mark Read</a>
+</li>
