@@ -1,7 +1,7 @@
 import express from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
-import { IBook } from './database/IBook';
+import { IBook, someBookExamples } from './database/IBook';
 import path from 'path';
 
 require('dotenv').config();
@@ -14,13 +14,7 @@ app.set('view engine', 'ejs');
 app.use(morgan("dev"));
 app.use(cors());
 app.get("/", (req, res) => {
-  const book :IBook = {
-    alreadyRead: true,
-    author: "C.S.Pacat",
-    title: "Captive Prince",
-    rating: 10,
-  } 
-  res.render("bookList", {books: [book, book]});
+  res.render("bookList", {books: someBookExamples});
 });
 
 const port = process.env.PORT || 5000;
