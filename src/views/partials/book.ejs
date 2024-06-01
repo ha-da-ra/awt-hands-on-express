@@ -5,15 +5,19 @@
     <h2>by <%= book.author %>
     </h2>
     <div class="rating">
-        <% if (book.rating !==undefined) { 
-            for (let i=0; i < 10;i++) { 
-                if (book.rating> i){%>
-                    <span class="fa fa-star checked"></span>
-            <% } else {%>
-                <span class="fa fa-star"></span>
-            <% }
+        <%# Task 4 starts here %>
+
+        <% if (book.rating !== undefined) { 
+            for (let i=0; i < 10; i++) { 
+                if (book.rating > i) {%>
+                    <span class="star filled">&#9733;</span>
+            <%  } else {%>
+                    <span class="star">&#9734;</span>
+            <%  }
             }
         } %>
+
+        <%# Task 4 ends here %>
     </div>
     <div class="already-read">
         <p>Already Read: <span>
