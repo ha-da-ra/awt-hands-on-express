@@ -6,6 +6,8 @@ import { someBookExamples } from "./database/someBookExamples";
 import path from 'path';
 import { bookRouter } from './routers/BookRouter';
 import {Request, Response} from "express";
+import { openConnection } from './database/open-connection';
+import { putExampleBooksInDb } from './database/book-crud';
 
 require('dotenv').config();
 
@@ -37,6 +39,7 @@ const port = process.env.PORT || 5000;
 app.listen(port, () => {
 	/* eslint-disable no-console */
 	console.log(`Listening: http://localhost:${port}`);
+	openConnection().then(() => putExampleBooksInDb());
 	/* eslint-enable no-console */
 });
 

@@ -8,13 +8,18 @@ export const someBookExamples: IBook[] = [{
   rating: 10,
 }, {
   alreadyRead: true,
-  author: "Ghost of Lies",
-  title: "Alice Winters",
+  title: "Ghost of Lies",
+  author: "Alice Winters",
   rating: 8,
-}, {
+},{
+  alreadyRead: true,
+  title: "E.W.B.",
+  author: "N.R: Walker",
+  rating: 5,
+},  {
   alreadyRead: false,
-  author: "Prince and Assassin",
-  title: "Tavia Lark",
+  title: "Prince and Assassin",
+  author: "Tavia Lark",
   rating: 9,
 }, {
   alreadyRead: false,
@@ -25,7 +30,7 @@ export const someBookExamples: IBook[] = [{
   alreadyRead: true,
   author: "Tim Marshall",
   title: "Prisoners of Geography",
-  rating: 9,
+  rating: 8,
 }, {
   alreadyRead: false,
   author: "Randall Munroe",
@@ -35,7 +40,7 @@ export const someBookExamples: IBook[] = [{
   alreadyRead: false,
   author: "Stephen Hawking",
   title: "Eine kurze Geschichte der Zeit",
-  rating: 9,
+  rating: 7,
 },
 
 ];
