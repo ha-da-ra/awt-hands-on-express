@@ -7,15 +7,7 @@
     <div class="rating">
         <%# Start Task 4 %>
 
-        <% if (book.rating !== undefined) { 
-            for (let i=0; i < 10; i++) { 
-                if (book.rating > i) {%>
-                    <span class="star filled">&#9733;</span>
-            <%  } else {%>
-                    <span class="star">&#9734;</span>
-            <%  }
-            }
-        } %>
+        <p>Rating:  <%= book.rating%></p>
 
         <%# End Task 4 %>
     </div>
