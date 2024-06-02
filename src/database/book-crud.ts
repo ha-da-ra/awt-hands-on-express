@@ -1,6 +1,6 @@
 //import { BookModel } from "./BookModel";
 
-import { someBookExamples } from "./IBook";
+import { someBookExamples } from "./someBookExamples";
 
 // All functions to access your books
 

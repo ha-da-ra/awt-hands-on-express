@@ -8,4 +8,4 @@ const bookSchema = new Schema ({
     alreadyRead: Boolean,
 });
 
-//export const BookModel = new Model(bookSchema);
+export const BookModel = new Model(bookSchema);

@@ -1,7 +1,8 @@
 import express, { NextFunction } from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
-import { IBook, someBookExamples } from './database/IBook';
+import { IBook } from './database/IBook';
+import { someBookExamples } from "./database/someBookExamples";
 import path from 'path';
 import { bookRouter } from './routers/BookRouter';
 import {Request, Response} from "express";
