@@ -29,9 +29,7 @@ app.use("/books", bookRouter);
 /* End Task 1*/
 
 /* Start Task 2 */
-app.use(function(err: Error, req: Request, res: Response, next: NextFunction) {
-	res.status(500).send(err.message);
-});
+
 /* Continue Task 2 in BookController.ts */
 
 const port = process.env.PORT || 5000;
