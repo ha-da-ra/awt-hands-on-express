@@ -5,9 +5,7 @@ import { someBookExamples } from "./someBookExamples";
 
 export function getAllBooks() {
 /* Start Task 6 */
-    return BookModel.find({ rating: { $gt: '7' } })
-                    .sort({ author: -1 })
-                    .select({ _id: 0, title: 1, author: 1 });
+    return BookModel.find({});
 /* End Task 6 */
 }
 
