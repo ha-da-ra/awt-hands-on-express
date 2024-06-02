@@ -100,9 +100,7 @@
     <ul class="book-list">
         <%# Start Task 3 %>
 
-        <% books.forEach(function(book) { %>
-            <%- include("partials/book", {book: book})%>
-        <% }); %>
+        <p>There are <%= books.length %> books in your list</p>
 
         <%# End Task 3 %>
     </ul>
