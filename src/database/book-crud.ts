@@ -5,15 +5,13 @@ import { someBookExamples } from "./someBookExamples";
 
 export function getAllBooks() {
 /* Start Task 6 */
-    return BookModel.find({});
+    return someBookExamples;
 /* End Task 6 */
 }
 
 
 export async function putExampleBooksInDb() {
 /* Continue Task 5 */
-    await BookModel.deleteMany({});
-    await BookModel.create(someBookExamples);
 /* End Task 5 */
 }
 
