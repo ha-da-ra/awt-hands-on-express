@@ -98,13 +98,13 @@
 <body>
     <h1>Book List</h1>
     <ul class="book-list">
-        <%# Task 3 starts here %>
+        <%# Start Task 3 %>
 
-        <% books.forEach(book => { %>
-            <%- include("partials/book", {book})%>
-        <% })%>
+        <% books.forEach(function(book) { %>
+            <%- include("partials/book", {book: book})%>
+        <% }); %>
 
-        <%# Task 3 ends here %>
+        <%# End Task 3 %>
     </ul>
 </body>
 
