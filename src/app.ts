@@ -30,6 +30,7 @@ app.use("/books", bookRouter);
 
 /* Start Task 2 */
 app.use(function(err: Error, req: Request, res: Response, next: NextFunction) {
+	console.log(err.stack);
 	res.status(500).send(err.message);
 });
 /* Continue Task 2 in BookController.ts */

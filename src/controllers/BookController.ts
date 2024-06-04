@@ -6,11 +6,8 @@ import { getAllBooks } from "../database/book-crud";
 export async function getBooks (req: Request, res : Response, next: NextFunction) {
     try {     
         const allBooks = await getAllBooks();
-        if(allBooks != null){
-            res.status(200).send(allBooks);
-        } else{
-            throw new Error("Failed");
-        }
+        throw new Error("Something went wrong");
+        res.status(200).send(allBooks);
     } catch (error){
         next(error);
     }
