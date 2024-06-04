@@ -5,7 +5,7 @@ import { someBookExamples } from "./someBookExamples";
 
 export function getAllBooks() {
 /* Start Task 6 */
-    return BookModel.find({});
+    return someBookExamples;
 /* End Task 6 */
 }
 
